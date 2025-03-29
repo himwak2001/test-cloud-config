@@ -1,0 +1,11 @@
+server:
+  port: 8072
+
+eureka:
+  instance:
+    preferIpAddress: true     # want to register this service to eureka using IP Address
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
